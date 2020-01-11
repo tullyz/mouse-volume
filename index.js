@@ -3,10 +3,12 @@ var Mouse = require('node-mouse');
 var mouseDevice = new Mouse();
 
 var InputEvent = require('input-event');
-// wired wheel mouse
-var input = new InputEvent('/dev/input/event0');
-// wireless wheel mouse
-// var input = new InputEvent('/dev/input/event1');
+// find # of mouse event
+const execSync = require('child_process').execSync;
+const result =  execSync('cat /proc/bus/input/devices | grep mouse0').toString();
+n = result.indexOf("event")
+var a = result.substring(n+5, n+6)
+var input = new InputEvent('/dev/input/event'+a);
 
 var eventDevice = new InputEvent.Mouse(input);
 
