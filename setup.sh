@@ -6,4 +6,5 @@ npm install input-event
 npm install -g forever
 /lib/node_modules/forever/bin/forever start /home/volumio/mouse-volume/index.js
 cp rc.local /etc
+chmod 755 /etc/rc.local
 
