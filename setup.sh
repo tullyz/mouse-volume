@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo su
+
 npm install node-mouse
 npm install socket.io-client
 npm install input-event
