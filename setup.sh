@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 npm install node-mouse
 npm install socket.io-client
