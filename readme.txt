@@ -1,5 +1,5 @@
 
-*** How to connect a mouse to Volumio to make volume ***
+*** How to connect a wheel mouse to Volumio to control the volume ***
 
 I made it easy to install software that adjusts the volume using a wheel mouse on the Volumio installed on the Raspberry Pi.
 (I just put the necessary files on GitHub and bring them from there)
