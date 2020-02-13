@@ -21,5 +21,5 @@ Left click to select Venice Classic Radio.
 Right click to select Capital London.
 Automatically start this software at startup.
 Since the initial volume is 10 and the maximum volume is 50,
-if you want to change it, change the value of ~/mouse-volume/index.js.
+if you want to change it, change the value of ~/mouse-volume/index.js
 
