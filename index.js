@@ -16,7 +16,7 @@ var io=require('socket.io-client');
 var socket= io.connect('http://localhost:3000');
 
 // set initial volume value
-var vol = 10 ;  
+var vol = 3 ;  
 socket.emit('volume', vol);
 
 
