@@ -36,7 +36,7 @@ socket.on('pushListPlaylist', function(data) {
     socket.emit('addToPlaylist',{
 	"name":"Capital FM", 
 	"service":"webradio", 
-	"uri":"http://media-ice.musicradio.com/CapitalMP3"
+	"uri":"https://media-ssl.musicradio.com/Capital"
 	});
 
     }
