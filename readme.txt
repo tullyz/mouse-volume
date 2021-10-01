@@ -11,7 +11,7 @@ sudo su
 git clone https://github.com/tullyz/mouse-volume
 (If 'fatal: destination path 'mouse-volume' already exists and is not an empty directory.' message appears, type 
 rm -r mouse-volume 
-)
+and try again.)
 cd mouse-volume
 chmod u+x setup.sh
 ./setup.sh
