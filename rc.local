@@ -12,7 +12,7 @@
 # By default this script does nothing.
 
 
-node /home/volumio/mouse-volume/index.js
+node /home/volumio/mouse-volume/index.js &
 
 exit 0
 
