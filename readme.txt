@@ -36,7 +36,7 @@ if you want to change it, change the value of ~/mouse-volume/index.js
 
 1. First of all, install "mouse-volume" in your raspberry pi. 
 
-2. Then, add 　socket.emit('play');　 in   ~/mouse-volume/index.js . 
+2. Then, add 　socket.emit('play');　 in   ~/mouse-volume/index.js :
 
 // set initial volume value
 var vol = 10;
@@ -45,11 +45,10 @@ socket.emit('volume', vol);
 // auto start
 socket.emit('play');
 
-3. Finally add  sleep 30s  in /etc/rc.local .
+3. Finally add  sleep 30s  in /etc/rc.local :
 
 sleep 30s
 node /home/volumio/mouse-volume/index.js &
-
 
 Note) It took 30 seconds for Raspberry Pi 4, but if it is not automatically played on a slow model such as zero, it needs to be longer. 
 
