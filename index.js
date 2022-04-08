@@ -30,7 +30,7 @@ socket.on('pushListPlaylist', function(data) {
     socket.emit('addToPlaylist',{
 	"name":"Venice Classic Radio", 
 	"service":"webradio", 
-	"uri":"http://174.36.206.197:8000"
+	"uri":"https://uk2.streamingpulse.com/ssl/vcr1"
 	});
     socket.emit('createPlaylist',{"name":"Capital FM"});
     socket.emit('addToPlaylist',{
