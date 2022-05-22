@@ -19,7 +19,8 @@ var socket= io.connect('http://localhost:3000');
 var vol = 3 ;  
 socket.emit('volume', vol);
 
-
+// auto start
+socket.emit('play');
 
 // Create play lists if empty
 socket.emit('listPlaylist');
