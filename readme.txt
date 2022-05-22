@@ -34,7 +34,7 @@ if you want to change it, change the value of ~/mouse-volume/index.js
 --------------------------------------------------------------------------
 
 *** How to add AutoAtart feature to Volumio 3 ***    (added 12/12/2021)
- (added 22/5/2022)  Made the followings as default. 
+  Made the followings as default. (added 22/5/2022) 
 
 1. First of all, install "mouse-volume" in your raspberry pi. 
 
