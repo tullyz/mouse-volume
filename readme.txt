@@ -23,6 +23,8 @@ Toggle pause / play when mouse wheel is pressed.
 Left click to select Venice Classic Radio.
 Right click to select Capital London.
 Automatically start this software at startup.
+Start music in the playlist (Queue) at startup. (AutoAtart feature).
+
 Since the initial volume is 3 and the maximum volume is 50,
 if you want to change it, change the value of ~/mouse-volume/index.js
 
@@ -32,7 +34,7 @@ if you want to change it, change the value of ~/mouse-volume/index.js
 --------------------------------------------------------------------------
 
 *** How to add AutoAtart feature to Volumio 3 ***    (added 12/12/2021)
-
+ (added 22/5/2022)  Made the followings as default. 
 
 1. First of all, install "mouse-volume" in your raspberry pi. 
 
