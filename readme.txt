@@ -6,15 +6,16 @@ I made it easy to install software that adjusts the volume using a wheel mouse o
 Raspberry Pi zero takes about 3 minutes to install 4 libraries, so please wait patiently.
 
 Insturction:
-sudo su
-(Enter password. "volumio" is default)
-git clone https://github.com/tullyz/mouse-volume
+volumio@volumio:~$ git clone https://github.com/tullyz/mouse-volume
   (If 'fatal: destination path 'mouse-volume' already exists and is not an empty directory.' message appears, type 
+  sudo su
   rm -r mouse-volume 
   and try again.)
-cd mouse-volume
-chmod u+x setup.sh
-./setup.sh
+volumio@volumio:~$ cd mouse-volume
+volumio@volumio:~$ chmod u+x setup.sh
+volumio@volumio:~$ sudo su
+(Enter password. "volumio" is default)
+# ./setup.sh
 
 
 Specification:
