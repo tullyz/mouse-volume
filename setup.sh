@@ -7,4 +7,4 @@ npm install --save-dev webpack-remove-debug
 node /home/volumio/mouse-volume/index.js &
 cp rc.local /etc
 chmod 755 /etc/rc.local
-
+touch /data/manifestUI
