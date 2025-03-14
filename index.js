@@ -1,16 +1,8 @@
-
+﻿
 var Mouse = require('node-mouse');
 var mouseDevice = new Mouse();
 
 var InputEvent = require('input-event');
-
-var io=require('socket.io-client');
-var socket= io.connect('http://localhost:3000');
-
-// set initial volume value
-var vol = 15 ;  
-socket.emit('volume', vol);
-
 // find # of mouse event
 const execSync = require('child_process').execSync;
 const result =  execSync('cat /proc/bus/input/devices | grep mouse0').toString();
@@ -20,6 +12,15 @@ var input = new InputEvent('/dev/input/event'+a);
 
 var eventDevice = new InputEvent.Mouse(input);
 
+var io=require('socket.io-client');
+var socket= io.connect('http://localhost:3000');
+
+// set initial volume value
+var vol = 3 ;  
+socket.emit('volume', vol);
+
+// auto start
+socket.emit('play');
 
 // Create play lists if empty
 socket.emit('listPlaylist');
@@ -30,15 +31,12 @@ socket.on('pushListPlaylist', function(data) {
     socket.emit('addToPlaylist',{
 	"name":"Venice Classic Radio", 
 	"service":"webradio", 
-        "uri":"http://174.36.206.197:8000"
-//        "uri":"https://uk2.streamingpulse.com/ssl/vcr1"
-//        "uri":"https://uk2.streamingpulse.com/ssl/vcr2"
+	"uri":"https://uk2.streamingpulse.com/ssl/vcr1"
 	});
     socket.emit('createPlaylist',{"name":"Capital FM"});
     socket.emit('addToPlaylist',{
 	"name":"Capital FM", 
 	"service":"webradio", 
-	//"uri":"http://media-ice.musicradio.com/CapitalMP3"
 	"uri":"https://media-ssl.musicradio.com/Capital"
 	});
 
@@ -82,6 +80,6 @@ eventDevice.on('wheel', e => {
   vol = vol + direction ;
 // volume limitter
   if (vol < 0) vol = 0 ;
-  if (vol > 50) vol = 50 ;
+  if (vol > 100) vol = 100 ;
   socket.emit('volume', vol);
 })
