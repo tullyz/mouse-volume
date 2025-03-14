@@ -50,12 +50,12 @@ socket.emit('volume', vol);
 // auto start
 socket.emit('play');
 
-3. Finally add  sleep 30s  in /etc/rc.local :
+3. Finally add index.js in /etc/rc.local :
 
-sleep 30s
+# sleep 30s  (The latest version does not require this wait)
 node /home/volumio/mouse-volume/index.js &
 
-Note) It took 30 seconds for Raspberry Pi 4, but if it is not automatically played on a slow model such as zero, it needs to be longer. 
+# Note) It took 30 seconds for Raspberry Pi 4, but if it is not automatically played on a slow model such as zero, it needs to be longer. 
 
 4. After restarting it, you should be able to play the radio stations or songs in the playlist (Queue) at startup automatically. 
 
