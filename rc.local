@@ -11,7 +11,7 @@
 #
 # By default this script does nothing.
 
-#sleep 40s
+sleep 40s
 node /home/volumio/mouse-volume/index.js &
 
 exit 0
