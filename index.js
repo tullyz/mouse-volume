@@ -1,4 +1,4 @@
-var inputevent = require('input_event');
+var inputevent = require('input_event_s');
 //var inputevent = require('input-event');
 
 // find # of PowerMate event
